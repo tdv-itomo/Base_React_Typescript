@@ -1,0 +1,11 @@
+.p-inputotp {
+    display: flex;
+    align-items: center;
+    gap: $inlineSpacing * 3;
+}
+
+.p-inputotp-input {
+    text-align: center;
+    width: 3 * nth($inputPadding, 2) + 1rem;
+    height: 3 * nth($inputPadding, 2) + 1rem;
+}

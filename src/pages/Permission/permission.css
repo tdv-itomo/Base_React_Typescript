@@ -1,0 +1,11 @@
+.custom-table .p-datatable-tbody > tr > td {
+  border: none !important;
+  border-style: none !important;
+}
+
+.custom-table .p-datatable-tbody > tr.p-highlight {
+  background-color: var(--primary-color); 
+  color: #fff; 
+ border-radius: 12px !important;
+}
+
