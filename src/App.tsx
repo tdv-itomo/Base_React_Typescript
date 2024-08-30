@@ -3,12 +3,11 @@ import { publicRoutes } from './routes';
 import { privateRoutes } from './routes';
 import PrivateLayout from './layout/PrivateLayout';
 import PublicLayout from './layout/PublicLayout';
-
 import Authmiddleware from './routes/authMiddleware';
 
 import 'primeicons/primeicons.css';
-import 'font-awesome/css/font-awesome.min.css';
 import 'primeflex/primeflex.css';
+import 'font-awesome/css/font-awesome.min.css';
 import './assets/scss/themes/main/green/theme.scss';
 
 function App() {

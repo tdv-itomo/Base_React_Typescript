@@ -12,7 +12,6 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { logout } from '../../store/Auth/slice';
 import { shallowEqual, useDispatch, useSelector } from 'react-redux';
-import { getByMyself } from '../../store/User/slice';
 import { RootState } from '../../store';
 import { useNavigate } from 'react-router-dom';
 import { MenuItem } from 'primereact/menuitem';
@@ -33,19 +32,6 @@ const Header = () => {
       document.title = titlePage;
     }
   }, [titlePage, dispatch, token]);
-
-  useEffect(() => {
-    if (token) {
-      dispatch(getByMyself());
-    }
-  }, [dispatch, token]);
-
-  const { information } = useSelector(
-    (state: RootState) => ({
-      information: state.User.dataByMyself,
-    }),
-    shallowEqual
-  );
 
   const profileMenuItems: MenuItem[] = [
     {
